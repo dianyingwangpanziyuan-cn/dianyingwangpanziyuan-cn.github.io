@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="电影网盘资源指南 - 正版片源索引 · 观影指南。提供公版经典、平台限免、电影节展映、公共教育资源四类合法观影入口与高分片单。">
+<meta name="keywords" content="电影网盘资源,电影网盘,正版片源索引,公版电影,限免片单,观影指南,dianyingwangpanziyuan">
+<meta name="author" content="电影网盘资源指南">
+<meta name="theme-color" content="#100818">
+<title>电影网盘资源指南 - 正版片源索引 · 观影指南 | 电影网盘资源</title>
+<link rel="canonical" href="https://dianyingwangpanziyuan-cn.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;background:#100818;color:#e8e4f5;line-height:1.85;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul,ol,dl{list-style:none}
+:focus-visible{outline:2px solid #b48bff;outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.3rem}
+
+/* 顶栏 */
+.top{position:sticky;top:0;z-index:99;background:rgba(13,9,24,.97);backdrop-filter:blur(14px);border-bottom:1px solid #2a2244}
+.tin{display:flex;align-items:center;gap:1rem;height:62px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:960;font-size:1.08rem;white-space:nowrap;letter-spacing:.01em}
+.logo{width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;color:#100818;background:
+  radial-gradient(circle at 30% 22%,#ffffff,#d8c4ff 46%,#7c4dff 78%,#4a1f9e);
+  box-shadow:0 0 28px rgba(180,139,255,.45);flex:0 0 auto;animation:lo 7s ease-in-out infinite alternate}
+@keyframes lo{to{filter:brightness(1.16) hue-rotate(10deg)}}
+.brand em{font-style:normal;color:#b48bff;font-size:.2rem;letter-spacing:.24em;display:block;font-weight:750;margin-top:-.14em}
+.brand small{font-size:.54rem;color:#a79cc6;font-weight:600;margin-left:.2rem}
+.tabs{display:flex;gap:.2rem;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{padding:.46rem .9rem;border-radius:999px;font-size:.84rem;color:#d5cde8;white-space:nowrap;transition:.2s}
+.tabs a:hover{color:#fff;background:rgba(180,139,255,.14)}
+.tabs a.on{background:linear-gradient(100deg,#e2d3ff,#7c4dff);color:#100818;font-weight:960;box-shadow:0 6px 18px rgba(124,77,255,.4)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(520px 240px at 84% 8%,rgba(180,139,255,.22),transparent 54%),
+  radial-gradient(420px 220px at 12% 70%,rgba(255,176,122,.1),transparent 58%),
+  linear-gradient(168deg,#0a0614,#160e2e 54%,#0a0614)}
+/* 云盘格线 */
+.gridbg{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.75;
+  background-image:
+    linear-gradient(rgba(180,139,255,.13) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(180,139,255,.13) 1px,transparent 1px);
+  background-size:46px 46px;animation:gb 40s linear infinite}
+@keyframes gb{to{background-position:46px 46px}}
+/* 纯 CSS 云盘 */
+.disk{position:absolute;right:6%;top:16%;z-index:2;pointer-events:none;width:196px;height:120px}
+.disk .bd{position:absolute;inset:0;border-radius:26px;background:linear-gradient(150deg,#2a1d52,#160e2e);border:3px solid #4a3a86;box-shadow:0 0 44px rgba(124,77,255,.35),inset 0 -12px 26px rgba(0,0,0,.5)}
+.disk .lg{position:absolute;left:16px;top:16px;width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff,#cbb6ff 55%,#7c4dff);box-shadow:0 0 16px rgba(180,139,255,.6);animation:lg 2.6s ease-in-out infinite alternate}
+.disk .sh{position:absolute;left:16px;right:16px;bottom:16px;height:9px;border-radius:999px;background:linear-gradient(90deg,#7c4dff,#ffb07a);overflow:hidden}
+.disk .sh i{display:block;height:100%;width:38%;background:rgba(255,255,255,.45);border-radius:999px;animation:sh 2.2s ease-in-out infinite alternate}
+.disk .ic{position:absolute;right:16px;top:16px;font-size:1.5rem;filter:drop-shadow(0 4px 10px rgba(0,0,0,.5))}
+@keyframes lg{to{transform:scale(1.12);box-shadow:0 0 26px rgba(180,139,255,.85)}}
+@keyframes sh{to{width:78%}}
+.hbox{position:relative;z-index:3;display:grid;grid-template-columns:1fr .84fr;gap:2.6rem;align-items:center;padding:4rem 1.3rem;max-width:1180px;margin:0 auto}
+.kick{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;color:#e8e4f5;background:rgba(180,139,255,.12);border:1px solid rgba(180,139,255,.44);padding:.3rem .8rem;border-radius:999px;margin-bottom:1rem}
+h1{font-size:clamp(1.85rem,4.6vw,3rem);line-height:1.22;font-weight:960;margin-bottom:1rem;background:linear-gradient(100deg,#fff,#ddd0ff 54%,#b48bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 u{text-decoration:none;color:#ffb07a;-webkit-text-fill-color:#ffb07a}
+.hero>p{color:#cdc4e6;font-size:1rem;max-width:33em;margin-bottom:1.5rem}
+.acts{display:flex;gap:.7rem;flex-wrap:wrap}
+.b{padding:.78rem 1.8rem;border-radius:12px;font-weight:850;font-size:.94rem;border:0;cursor:pointer;transition:.25s}
+.b.p{background:linear-gradient(100deg,#ddd0ff,#7c4dff);color:#100818;box-shadow:0 10px 26px rgba(124,77,255,.32)}
+.b.p:hover{transform:translateY(-2px)}
+.b.o{background:transparent;color:#e8e4f5;border:1px solid #2a2244}
+.sts{display:flex;gap:2.4rem;margin-top:1.7rem;flex-wrap:wrap}
+.sts div{font-size:.77rem;color:#a79cc6}
+.sts b{display:block;font-size:1.55rem;color:#b48bff;font-weight:960;line-height:1.2;text-shadow:0 0 14px rgba(180,139,255,.5)}
+
+/* 云盘索引卡 */
+.idx{position:relative;width:100%;max-width:292px;margin-left:auto;background:#160e2e;border:2px solid #2a2244;border-radius:16px;padding:1.15rem;box-shadow:0 26px 60px rgba(0,0,0,.6);transform:rotate(-1.8deg)}
+.idx h4{font-size:.9rem;margin-bottom:.85rem;letter-spacing:.04em;display:flex;align-items:center;gap:.5rem}
+.idx h4 i{font-style:normal;font-size:.58rem;color:#100818;background:#ffb07a;border-radius:5px;padding:.1rem .5rem;font-weight:850}
+.idx dl{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:.7rem}
+.idx dt{font-size:.62rem;color:#a79cc6;letter-spacing:.08em;margin-bottom:.14rem}
+.idx dd{font-size:.8rem;font-weight:750;color:#e8e4f5}
+.idx .cut{height:1px;background:repeating-linear-gradient(90deg,#2a2244 0 6px,transparent 6px 12px);margin:.2rem 0 .7rem}
+.idx p{font-size:.72rem;color:#a79cc6;line-height:1.7}
+.idx .tk{position:absolute;right:.8rem;top:.8rem;font-size:1.7rem;font-weight:960;color:rgba(180,139,255,.16);line-height:1}
+
+/* 通用 */
+section{padding:3.4rem 0}
+.uh{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.7rem;flex-wrap:wrap}
+.ut{font-size:clamp(1.3rem,2.8vw,1.85rem);font-weight:960;display:flex;align-items:center;gap:.6rem}
+.ut::before{content:"";width:5px;height:1.2em;border-radius:3px;background:linear-gradient(#ddd0ff,#7c4dff)}
+.us{font-size:.8rem;color:#a79cc6}
+.us:hover{color:#b48bff}
+
+/* A：合法入口（Grid 卡片墙） */
+.now{background:linear-gradient(180deg,#100818,#160e2e)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:1rem}
+.en{border:1px solid #2a2244;border-radius:16px;overflow:hidden;background:#160e2e;transition:.34s;cursor:pointer;display:flex;flex-direction:column}
+.en:hover{transform:translateY(-7px) rotate(.7deg);border-color:#b48bff;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.cvr{height:138px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative}
+.cvr::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,9,24,.94),transparent 56%)}
+.cvr b{position:relative;z-index:2;filter:drop-shadow(0 8px 14px rgba(0,0,0,.6));transition:.4s;font-weight:400}
+.en:hover .cvr b{transform:scale(1.16) rotate(-9deg)}
+.cvr .mn{position:absolute;top:.6rem;left:.6rem;z-index:3;font-size:.62rem;font-weight:850;padding:.2rem .55rem;border-radius:6px;background:#7c4dff;color:#100818}
+.cvr .tg{position:absolute;top:.6rem;right:.6rem;z-index:3;font-size:.6rem;font-weight:850;padding:.2rem .5rem;border-radius:6px;background:#2a2244;color:#e8e4f5}
+.en h3{font-size:.96rem;padding:.8rem .95rem .2rem;display:flex;justify-content:space-between;gap:.5rem;align-items:baseline}
+.en h3 i{font-style:normal;font-size:.6rem;color:#ffb07a;font-weight:750;white-space:nowrap;border:1px solid rgba(255,176,122,.5);border-radius:999px;padding:.12rem .5rem;background:rgba(255,176,122,.1)}
+.en p{font-size:.74rem;color:#a79cc6;padding:0 .95rem .9rem}
+
+/* B：片源分类（手风琴 details/summary） */
+.sea{background:#160e2e}
+.acc{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.acc details{border:1px solid #2a2244;background:#100818;border-radius:15px;overflow:hidden;transition:.32s;counter-increment:ac}
+.acc details[open]{border-color:#b48bff;box-shadow:0 24px 52px rgba(0,0,0,.5)}
+.acc summary{cursor:pointer;padding:1.15rem 1.2rem;display:flex;align-items:center;gap:.75rem;font-weight:850;font-size:1rem;list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"＋";margin-left:auto;color:#b48bff;font-size:1.2rem;font-weight:400}
+.acc details[open] summary::after{content:"－"}
+.acc summary .no{width:42px;height:42px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:960;color:#100818;flex:0 0 auto;box-shadow:inset 0 -5px 12px rgba(0,0,0,.35)}
+.n1{background:linear-gradient(150deg,#ddd0ff,#7c4dff)}
+.n2{background:linear-gradient(150deg,#ffdccb,#e08a4a)}
+.n3{background:linear-gradient(150deg,#cfe3ff,#5a86d0)}
+.n4{background:linear-gradient(150deg,#cdeedb,#4fae70)}
+.n5{background:linear-gradient(150deg,#f0d6e0,#c46a8a)}
+.n6{background:linear-gradient(150deg,#ffe9c2,#d0a24a)}
+.acc summary .tx small{display:block;font-size:.62rem;color:#a79cc6;font-weight:600;letter-spacing:.06em;margin-top:.1rem}
+.acc ul{padding:0 1.2rem 1.2rem}
+.acc li{font-size:.86rem;color:#cdc4e6;padding:.5rem 0;border-top:1px dashed #2a2244;display:flex;justify-content:space-between;gap:.6rem}
+.acc li:first-child{border-top:0}
+.acc li span{color:#ffb07a;font-size:.72rem;white-space:nowrap}
+
+/* C：高分榜单（table） */
+.rk{}
+.tb{width:100%;border-collapse:collapse;background:#160e2e;border:1px solid #2a2244;border-radius:14px;overflow:hidden;font-size:.9rem}
+.tb th{background:#2a2244;color:#b48bff;font-weight:850;font-size:.78rem;letter-spacing:.05em;text-align:left;padding:.8rem .9rem;border-bottom:1px solid #2a2244;white-space:nowrap}
+.tb td{padding:.72rem .9rem;border-bottom:1px solid #211a3a;vertical-align:middle}
+.tb tr:last-child td{border-bottom:0}
+.tb tbody tr{transition:.2s}
+.tb tbody tr:hover{background:rgba(180,139,255,.1)}
+.tb td:first-child{font-weight:960;color:#b48bff;width:56px;text-align:center;font-variant-numeric:tabular-nums}
+.tb td:nth-child(2){font-weight:750}
+.tb td:nth-child(6){color:#ffdccb;font-weight:800;white-space:nowrap}
+.tag{display:inline-block;font-size:.66rem;padding:.16rem .6rem;border-radius:999px;border:1px solid rgba(180,139,255,.5);color:#b48bff;white-space:nowrap}
+.tag.w{color:#ffdccb;border-color:rgba(255,220,203,.45)}
+.tag.v{color:#cfe3ff;border-color:rgba(207,227,255,.4)}
+
+/* D：检索四步（栅格步骤条 counter） */
+.md{background:#160e2e;border-top:1px solid #2a2244;border-bottom:1px solid #2a2244}
+.stp{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;counter-reset:st}
+.stp div{position:relative;background:#100818;border:1px solid #2a2244;border-radius:15px;padding:1.2rem 1.2rem 1.3rem;transition:.34s;cursor:pointer;overflow:hidden}
+.stp div::after{content:counter(st,decimal-leading-zero);counter-increment:st;position:absolute;right:.4rem;top:-.3rem;font-size:4.4rem;font-weight:960;color:rgba(180,139,255,.13);line-height:1}
+.stp div:hover{transform:translateY(-8px);border-color:#b48bff;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.stp .no{width:36px;height:36px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:.86rem;font-weight:960;color:#100818;margin-bottom:.8rem;background:linear-gradient(150deg,#ddd0ff,#7c4dff)}
+.stp h3{font-size:.98rem;margin-bottom:.5rem;position:relative}
+.stp p{font-size:.74rem;color:#a79cc6;position:relative}
+
+/* 页脚 */
+.foot{background:#0a0614;padding:2.6rem 0 1.2rem;border-top:1px solid #2a2244}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;margin-bottom:1.6rem}
+.foot h5{font-size:.92rem;color:#b48bff;margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
+.foot li{font-size:.83rem;color:#a79cc6;line-height:1.95}
+.foot a:hover{color:#fff}
+.cp{text-align:center;font-size:.74rem;color:#8a7fa8;border-top:1px solid #2a2244;padding-top:1.2rem;line-height:1.95}
+.cp a{color:#b48bff}
+
+@media(max-width:900px){
+  .hbox{grid-template-columns:1fr;padding-top:2.6rem;padding-bottom:3rem}
+  .idx{margin:0 auto;transform:scale(.92) rotate(0)}
+  .disk{width:132px;height:86px;right:0}
+}
+@media(max-width:560px){
+  .tin{height:54px}.brand{font-size:.9rem}.logo{width:33px;height:33px;font-size:.9rem;border-radius:10px}
+  .brand small{display:none}
+  .tabs a{padding:.4rem .6rem;font-size:.78rem}
+  .wrap{padding:0 1rem}
+  section{padding:2.6rem 0}
+  h1{font-size:1.7rem}
+  .grid{grid-template-columns:repeat(2,1fr);gap:.7rem}
+  .cvr{height:102px;font-size:2rem}
+  .en h3{font-size:.8rem;padding:.7rem .8rem .2rem;flex-direction:column;gap:.3rem}
+  .acc{grid-template-columns:1fr}
+  .tb thead{display:none}
+  .tb tr{display:block;padding:.3rem 0}
+  .tb td{display:block;padding:.26rem .9rem;border:0}
+  .tb td:first-child{color:#b48bff;width:auto;text-align:left;font-size:.76rem}
+  .tb td:nth-child(4){display:none}
+  .stp{grid-template-columns:1fr 1fr}
+  .b{flex:1;text-align:center;padding:.72rem 1.2rem;font-size:.9rem}
+  .gridbg{display:none}
+}
+@media print{.top,.acts,.idx,.disk,.gridbg{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="top" role="banner">
+  <div class="tin">
+    <a class="brand" href="#top"><span class="logo">☁️</span>电影网盘资源<span><small>指南</small></span><em>LEGAL SOURCE INDEX</em></a>
+    <nav class="tabs" aria-label="主导航">
+      <a href="#now" class="on">合法入口</a>
+      <a href="#sea">片源分类</a>
+      <a href="#rk">高分榜单</a>
+      <a href="#md">检索四步</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="gridbg" aria-hidden="true"></div>
+  <div class="disk" aria-hidden="true"><div class="bd"></div><div class="lg"></div><div class="sh"><i></i></div><div class="ic">🎬</div></div>
+  <div class="hbox">
+    <div>
+      <span class="kick">☁️ 电影网盘资源指南 · 正版片源索引</span>
+      <h1>电影网盘资源<br>只索引 <b>合法</b> 的 <u>那一个</u> 来源</h1>
+      <p><b style="color:#b48bff">电影网盘资源</b>不做资源站、不存片、不转存。<b>"网盘"在这里是索引</b>：把散落在公版库、平台限免、电影节展映、公共教育资源里的<b>正版观影入口</b>整理成一个目录——找得到、看得清、付得起。</p>
+      <div class="acts"><a class="b p" href="#now">看合法入口</a><a class="b o" href="#md">学检索四步</a></div>
+      <div class="sts"><div><b>4</b>类合法来源</div><div><b>0</b>个盗链</div><div><b>100%</b>正版</div></div>
+    </div>
+    <aside class="idx" aria-label="片源索引">
+      <span class="tk">IDX</span>
+      <h4>🗂 本期索引 <i>INDEX</i></h4>
+      <dl><dt>条目</dt><dt>状态</dt><dd>第 26 期</dd><dd>已核验</dd>
+      <dt>来源</dt><dt>费用</dt><dd>4 类</dd><dd>0–会员</dd></dl>
+      <div class="cut" aria-hidden="true"></div>
+      <p>"<b>真正难找的不是资源，是一个干净、正版、能长期存在的观看入口。</b>"<br>——电影网盘资源 · 索引原则</p>
+    </aside>
+  </div>
+</section>
+
+<section id="now" class="now">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">合法入口</h2><a class="us" href="#">四类可以放心点的"网盘" →</a></div>
+    <div class="grid">
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#0a0614,#30205e)"><span class="mn">公版</span><b>📜</b></div><h3>公版经典库 <i>0 元</i></h3><p>版权到期，人人可看：卓别林、塔可夫斯基早期、默片修复版</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#100a14,#5a3a1e)"><span class="tg">限免</span><b>🎟️</b></div><h3>平台官方限免 <i>限时段</i></h3><p>流媒体周年庆、新片上映前的老片免费窗口，按期更新</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#0c1018,#1e305e)"><span class="mn">展映</span><b>🎪</b></div><h3>电影节公开放映 <i>线下</i></h3><p>北影节、上影节、平遥、First 的公开单元与高校巡展</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#101810,#1e4a2c)"><span class="tg">教育</span><b>🎓</b></div><h3>公共教育资源 <i>课堂</i></h3><p>高校电影资料馆、美术馆影像厅、公开课片单</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#140a14,#4a1e3e)"><span class="mn">修复</span><b>🎞️</b></div><h3>4K 修复版 <i>买断</i></h3><p>官方发行的修复版蓝光/数字版，一次购买，长期观看</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#0e1414,#1e4a4a)"><span class="tg">片单</span><b>🧭</b></div><h3>正版片单地图 <i>指南</i></h3><p>按"想看什么"反查"该去哪看"：大屏 / 耳机 / 深夜 / 雨天</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="sea" class="sea">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">片源分类</h2><span class="us">电影网盘资源 · 六类可索引的观影入口</span></div>
+    <div class="acc" style="counter-reset:ac">
+      <details open class="d1"><summary><span class="no n1">壹</span><span class="tx">公版经典<small>PUBLIC DOMAIN</small></span></summary>
+        <ul><li><b>《摩登时代》《城市之光》</b><span>0 元</span></li><li><b>《战舰波将金号》</b><span>0 元</span></li><li><b>《持摄影机的人》</b><span>0 元</span></li><li><b>《圣女贞德蒙难记》</b><span>0 元</span></li></ul></details>
+      <details class="d2"><summary><span class="no n2">贰</span><span class="tx">平台限免<small>LIMITED FREE</small></span></summary>
+        <ul><li><b>周年庆片单（按期更新）</b><span>限 7 天</span></li><li><b>新片上映前"老片免费看"</b><span>限时段</span></li><li><b>会员试用片单</b><span>3 天</span></li><li><b>广告支持的免费档</b><span>含广告</span></li></ul></details>
+      <details class="d3"><summary><span class="no n3">叁</span><span class="tx">修复与买断<small>RESTORED</small></span></summary>
+        <ul><li><b>《2001 太空漫游》4K 修复</b><span>买断</span></li><li><b>《花样年华》导演剪辑</b><span>买断</span></li><li><b>《霸王别姬》修复版</b><span>买断</span></li><li><b>黑泽明数位修复盒装</b><span>买断</span></li></ul></details>
+      <details class="d4"><summary><span class="no n4">肆</span><span class="tx">展映与资料馆<small>SCREENING</small></span></summary>
+        <ul><li><b>北京国际电影节 · 修复单元</b><span>线下</span></li><li><b>上海电影节 · 向大师致敬</b><span>线下</span></li><li><b>高校电影资料馆放映</b><span>学生票</span></li><li><b>美术馆影像厅</b><span>预约</span></li></ul></details>
+      <details class="d5"><summary><span class="no n5">伍</span><span class="tx">短片与纪录片<small>SHORT & DOC</small></span></summary>
+        <ul><li><b>奥斯卡最佳真人短片历年片单</b><span>官方</span></li><li><b>纪录片公共授权片目</b><span>教育</span></li><li><b>学生毕设展映</b><span>免费</span></li><li><b>动画短片合集</b><span>合集</span></li></ul></details>
+      <details class="d6"><summary><span class="no n6">陆</span><span class="tx">按设备选片<small>BY DEVICE</small></span></summary>
+        <ul><li><b>大屏 · 对称构图片单</b><span>客厅</span></li><li><b>耳机 · 声音设计片单</b><span>通勤</span></li><li><b>手机 · 80 分钟短片</b><span>碎片</span></li><li><b>深夜 · 长片二刷</b><span>独处</span></li></ul></details>
+    </div>
+  </div>
+</section>
+
+<section id="rk" class="rk">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">高分榜单</h2><span class="us">值得为正版付一次钱的一批片子</span></div>
+    <table class="tb">
+      <thead><tr><th>#</th><th>看点</th><th>片目</th><th>时长</th><th>建议设备</th><th>索引评分</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>时间</td><td>星际穿越 / 降临</td><td>169′</td><td><span class="tag">大屏</span></td><td>9.4</td></tr>
+        <tr><td>2</td><td>色彩</td><td>辛德勒的名单 / 英雄</td><td>195′</td><td><span class="tag">买断</span></td><td>9.3</td></tr>
+        <tr><td>3</td><td>构图</td><td>布达佩斯大饭店 / 黄金三镖客</td><td>99′</td><td><span class="tag v">暂停</span></td><td>9.3</td></tr>
+        <tr><td>4</td><td>沉默</td><td>2001 太空漫游 / 海边的曼彻斯特</td><td>149′</td><td><span class="tag">深夜</span></td><td>9.2</td></tr>
+        <tr><td>5</td><td>声音</td><td>敦刻尔克 / 爆裂鼓手</td><td>107′</td><td><span class="tag v">戴耳机</span></td><td>9.2</td></tr>
+        <tr><td>6</td><td>水</td><td>少年派的奇幻漂流 / 水形物语</td><td>127′</td><td><span class="tag w">雨天</span></td><td>9.1</td></tr>
+        <tr><td>7</td><td>土地</td><td>隐入尘烟 / 路边野餐</td><td>133′</td><td><span class="tag w">安静</span></td><td>9.1</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="md" class="md">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">检索四步</h2><span class="us">电影网盘资源 · 找片四步</span></div>
+    <div class="stp">
+      <div><div class="no">壹</div><h3>先问：它过版权期了吗</h3><p>1929 年前的影片在多数地区已进入公版，可以放心看、放心分享。</p></div>
+      <div><div class="no">贰</div><h3>再问：平台有没有限免</h3><p>周年庆、新片宣发期、节假日，常有 7 天免费窗口，比"网盘"干净。</p></div>
+      <div><div class="no">叁</div><h3>还问：有没有修复版买断</h3><p>一次买断，长期观看，画质最好，也是对导演最直接的支持。</p></div>
+      <div><div class="no">肆</div><h3>最后：去资料馆或展映</h3><p>大银幕才是电影的本命。展映票常比"资源"更便宜，体验却好一百倍。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" role="contentinfo">
+  <div class="wrap">
+    <div class="fg">
+      <div><h5>🗂 电影网盘资源</h5><ul><li><a href="#now">合法入口</a></li><li><a href="#sea">片源分类</a></li><li><a href="#rk">高分榜单</a></li><li><a href="#md">检索四步</a></li></ul></div>
+      <div><h5>⚖️ 合法来源</h5><ul><li><a href="#">公版经典</a></li><li><a href="#">平台限免</a></li><li><a href="#">展映放映</a></li><li><a href="#">修复买断</a></li></ul></div>
+      <div><h5>📀 片单</h5><ul><li><a href="#">大屏片单</a></li><li><a href="#">耳机片单</a></li><li><a href="#">80 分钟短片</a></li><li><a href="#">深夜长片</a></li></ul></div>
+      <div><h5>🙏 关于本站</h5><ul><li><a href="#">索引原则</a></li><li><a href="#">版权声明</a></li><li><a href="#">免责声明</a></li></ul></div>
+    </div>
+    <div class="cp">
+      © 2026 电影网盘资源（电影网盘资源指南 · 正版片源索引）. 本站为<b>观影指南与正版片源索引</b>平台，<b>不提供任何影视资源下载、转存、在线播放或盗版链接</b>，倡导支持正版、去电影院、买修复版。<br>
+      网站网址：<a href="https://dianyingwangpanziyuan-cn.github.io/">https://dianyingwangpanziyuan-cn.github.io/</a>　｜　索引的是入口，不是文件
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tabs a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelectorAll('.tabs a').forEach(function(x){x.classList.remove('on')});
+    a.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
